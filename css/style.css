@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #fff;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: rgb(59,47,255);
+    background: linear-gradient(14deg, rgba(59,47,255,1) 0%, rgba(9,9,121,1) 35%, rgb(10, 0, 36) 100%);
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+    gap: 5%;
+}
+
+.user .infoUser{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    height: 40px;
+    width: 40px;
+}
+
+.user p{
+    font-size: 18px;
+    color: azure;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    height: 75px;
+    width: 75px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    width: 60%;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    border-left: 2px solid azure;
+    border-right: 2px solid azure;
+    border-radius: 1rem;
+    color: azure;
+    width: 110%;
+    height: max-content;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover{
+    background-color: rgb(164, 164, 255);
+}
+
+.img{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 3rem;
+}
+
+dialog{
+    align-items: center;
+    justify-items: center;
+    background: rgb(3, 77, 0, 0.7);
+    color: green;
+    border: 2px solid green;
+    border-radius: 8px;
+    animation: go-bottom 0.5s ;
+}
+@keyframes go-bottom {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+} 
+
+main button{
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(23, 3, 73) ;
+    border: 2px solid rgba(59,47,255,1);
+    color: azure;
+    font-weight: 900;
+    height: 23px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+
+
+main #addButton:hover{
+    background-color: rgba(9,9,121,1) ;
+}
+
+.botao{
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    background-color: rgb(255, 102, 102);
+    border: 1px solid red;
+    color: azure;
+    font-weight: 900;
+    height: max-content;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.botao:hover{
+    background-color: rgb(179, 0, 0);
+    border: 1px solid rgb(114, 0, 0);
+}
+
+.botaoVoltar{
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    background-color: rgb(255, 102, 102);
+    border: 1px solid red;
+    color: azure;
+    font-weight: 600;
+    cursor: pointer;
+    width: max-content;
+}
+
+.botaoVoltar:hover{
+    background-color: rgb(179, 0, 0);
+    border: 1px solid rgb(114, 0, 0);
+}
+
+
+/* ===================MAIN==================== */
+
+
+
+main h1, main h2{
+    font-family: 'Raleway', sans-serif;
+    display: block;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+main .php{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+main .carros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+main label{
+    font-family: 'Poppins', sans-serif;
+}
+
+table{
+    width: 100%;
+    border: 2px solid #fff;
+    font-family: 'Poppins', sans-serif;
+    border-collapse:collapse;
+    border-radius: .5rem;
+}
+
+main table thead td{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main table td{
+    text-align: center;
+    border-bottom: 2px solid rgb(170, 170, 170);
+    border-right: 2px solid rgb(170, 170, 170);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main table td img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+main table td button{
+    width: max-content;
+    height: max-content;
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    padding-left: .5rem;
+    cursor: pointer;
+    transition: 0,3s;
+}
+
+main table td button:hover{
+    opacity: .60;
+}
+
+
+form{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form .input{
+    color: #fff;
+    border: 2px solid rgba(59,47,255,1);
+    background-color: rgb(9, 0, 32);
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+}
+
+form .senha{
+    height: 7rem;
+    border-bottom: 1px solid rgba(59,47,255,1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+form .input#nascimento{
+    color: #fff;
+}
+
+form .ipt_radio label{
+    font-size: 14px;
+}
+
+form button{
+    background-color: rgb(14, 255, 46);
+    border: 1px solid green;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    border-radius: 1rem;
+    transition: 0.2s;
+    padding: .3rem;
+    height: max-content;
+    width: max-content;
+    margin: auto;
+    color: rgb(9, 0, 32);
+}
+
+form button:hover{
+    background-color: rgb(152, 255, 165);
+}
+
+fieldset{
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+
+fieldset img{
+    height:  90px;
+    width: 90px;     
+}
+
+fieldset p, fieldset h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+fieldset .infoCar1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+fieldset .infoCar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    
+}
+
+fieldset .infoCar2 p{
+    font-size: 15px;
+    
+}
+
+fieldset .info2{
+    margin-top: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+fieldset .info2 button{
+    background-color: rgb(142, 223, 255);
+    border: 1px solid rgb(24, 0, 110);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    border-radius: 1rem;
+    transition: 0.2s;
+    padding: .3rem;
+    width: auto;
+    height: auto;
+    color: rgb(9, 0, 32);
+}
+
+fieldset .info2 button:hover{
+    background-color: rgb(1, 144, 201);
+}
+
+fieldset.Ffull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+fieldset .Fuser{
+    align-items: center;
+}
+
+fieldset .Fcarro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset .Fcarro2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+fieldset .Fcarro2 div{
+    display: flex;
+    flex-direction: column;
+}
